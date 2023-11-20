@@ -21,7 +21,7 @@ public partial class Form1 : Form
         _searchTextBox = new TextBox
         {
             Name = "searchTextBox",
-            PlaceholderText = "Enter search criteria... (m/d/yyyy format for dates search)",
+            PlaceholderText = "Enter search criteria... To search by date of birth, enter '> m/d/yyyy' or '< m/d/yyyy'",
             Dock = DockStyle.Fill,
         };
 
