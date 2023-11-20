@@ -46,7 +46,7 @@ public partial class Form1 : Form
             Dock = DockStyle.Fill,
         };
         
-        // Set padding to display our form in the way that we eant
+        // Set padding to display our form in the way that we want
         tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, _searchTextBox.Height + 5));
         tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, _searchButton.Height + 15));
         tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
@@ -66,7 +66,7 @@ public partial class Form1 : Form
     {
         try
         {
-            // We load all stundents in the BD
+            // We load all students in the DB
             var students = _studentRepository.GetStudentsByFilters(null);
             _dataGridViewEstudiantes.DataSource = students;
         }
